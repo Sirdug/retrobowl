@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>retro bowl</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<iframe id="embededGame" title="Inline Frame Example" width="700" height="500" src="https://game316009.konggames.com/gamez/0031/6009/live/index.html">
+</iframe>
+
+<button onclick="goFullscreen('embededGame'); return false">Fullscreen</button>
+ 
+<script>
+function goFullscreen(id) {
+    var element = document.getElementById(id);
+    if (element.mozRequestFullScreen) {
+      element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullScreen) {
+      element.webkitRequestFullScreen();
+    }
+}
+</script>
+  <script src="script.js"></script>
+</body>
+
+</html>
